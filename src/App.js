@@ -1,12 +1,25 @@
-import react from "react";
+import react, { createContext } from "react";
 import reactdom from "react-dom";
-import { Route, Switch } from "react-router-dom";
+import ComA from './ComA'
+
+import Class from './Class'
+
    
+const { firstname}= createContext(); //create context
+
 const App=()=>{
     return(
 
+ <firstname.Provider value={"mandira"}> 
 
-    <h1>hello app</h1>
+<ComA/>
+
+</firstname.Provider>
+   
+
+
     )}
 
 export default App;
+
+export {firstname}

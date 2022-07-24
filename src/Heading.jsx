@@ -18,11 +18,11 @@ const Heading=()=>{
     //    alert("hi");
      async function getdata(){
          const res= await axios.get(
-            'https://pokeapi.co/api/v2/pokemon/25'
+            'https://pokeapi.co/api/v2/pokemon/1'
         
          );
           console.log(res);
-        // setname(res.data.name);
+        setname(res.data.name);
      }
      getdata();
    
